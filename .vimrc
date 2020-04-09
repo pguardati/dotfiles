@@ -79,9 +79,11 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-set clipboard=unnamed
 " faster navigation ctrl-dir
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" share clipboard register
+set clipboard=unnamed

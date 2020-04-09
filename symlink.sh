@@ -1,3 +1,5 @@
 #!/bin/bash
-ln -nfs /Users/pietroguardati/dev/.gitconfig /Users/pietroguardati/.gitconfig
+ln -nfs /Users/pietroguardati/dev/.vimrc /Users/pietroguardati/.vimrc
+ln -nfs /Users/pietroguardati/dev/.ideavimrc /Users/pietroguardati/.ideavimrc
+
 
