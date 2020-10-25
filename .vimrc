@@ -87,3 +87,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " share clipboard register
 set clipboard=unnamed
+
+" Enable folding with the spacebar
+set foldmethod=syntax
+nnoremap <space> za
