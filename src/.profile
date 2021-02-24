@@ -1,0 +1,3 @@
+PYTHONPATH=~/PycharmProjects/test:$PYTHONPATH
+export PYTHONPATH
+export HOMEBREW_NO_AUTO_UPDATE=1
