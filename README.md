@@ -1,4 +1,4 @@
-# config_files
+# dotfiles
 Instructions to setup a new machine
 
 ## install brew, zsh and utils packages
