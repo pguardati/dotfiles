@@ -13,8 +13,8 @@ brew install pbcopy
 create simlinks with absolute paths.  
 e.g:
 ```
-DOTFILES_SOURCE_PATH=/Users/pietro.guardati/PycharmProjects
-DOTFILES_DESTINATION_PATH=/Users/pietro.guardati
+DOTFILES_SOURCE_PATH=/Users/pietroguardati/PycharmProjects
+DOTFILES_DESTINATION_PATH=/Users/pietroguardati
 ## editor
 ln -nfs $DOTFILES_SOURCE_PATH/dotfiles/src/.vimrc $DOTFILES_DESTINATION_PATH/.vimrc
 ln -nfs $DOTFILES_SOURCE_PATH/dotfiles/src/.ideavimrc  $DOTFILES_DESTINATION_PATH/.ideavimrc
