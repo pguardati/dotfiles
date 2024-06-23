@@ -5,8 +5,6 @@
 if ! command -v brew &>/dev/null; then
   echo "Homebrew not found, installing..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  brew update
-  brew upgrade
 else
   echo "Homebrew already installed."
 fi
@@ -18,12 +16,3 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 else
   echo "Oh My Zsh already installed."
 fi
-
-# wget
-if ! brew list wget &>/dev/null; then
-  echo "wget not found, installing..."
-  brew install wget
-else
-  echo "wget already installed."
-fi
-
