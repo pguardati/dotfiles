@@ -1,0 +1,214 @@
+[
+  // basic navigation 
+  {
+    "key": "alt+f",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "shift+escape",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.reloadWindow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+o",
+    "command": "revealFileInOS"
+  },
+  // file and directories CRUD
+  {
+    "key": "cmd+f",
+    "command": "revealInExplorer"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "shift+ctrl+d",
+    "command": "compareSelected"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.moveEditorToNewWindow"
+  },
+  // file edit
+  {
+    "key": "g g",
+    "command": "cursorTop",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "g d",
+    "command": "editor.action.revealDefinitionAside",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+ctrl+p",
+    "command": "workbench.action.navigateBack",
+    "when": "!activeEditorIsOpen"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletVisible && explorerViewletFocus"
+  },
+  {
+    "key": "shift+f6",
+    "command": "editor.action.rename"
+  },
+  // services
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "alt+s",
+    "command": "workbench.view.extension.containersView"
+  },
+  // git
+  {
+    "key": "alt+g",
+    "command": "git-graph.view"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+u",
+    "command": "git.fetch"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "git.push"
+  },
+  {
+    "key": "cmd+z",
+    "command": "git.clean"
+  },
+  {
+    "key": "cmd+shift+z",
+    "command": "git.cleanAll"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "git.viewChanges",
+    "when": "scmProvider"
+  },
+  {
+    "key": "cmd+shift+a",
+    "command": "git.openAllChanges",
+    "when": "scmProvider"
+  },
+  // text
+  {
+    "key": "cmd+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "editor.action.formatDocument"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "notebook.format",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "alt+r",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
+  },
+  // fold code
+  {
+    "key": "ctrl+shift+-",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+alt+-",
+    "command": "editor.foldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+alt+=",
+    "command": "editor.unfoldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  // fold explorer directories
+  {
+    "key": "ctrl+shift+-",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "list.collapse",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "list.expand",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  // execute
+  {
+    "key": "shift+f10",
+    "command": "python.execInTerminal"
+  },
+  {
+    "key": "cmd+e",
+    "command": "editor.debug.action.selectionToRepl",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+e",
+    "command": "jupyter.execSelectionInteractive",
+    "when": "editorTextFocus && !inDebugMode"
+  },
+  // tests
+  {
+    "key": "shift+f9",
+    "command": "testing.debugAtCursor"
+  },
+  {
+    "key": "f10",
+    "command": "testing.runAtCursor"
+  }
+]
