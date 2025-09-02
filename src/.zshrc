@@ -120,8 +120,5 @@ set -o vi
 # unset __conda_setup
 # <<< conda initialize <<<
 
-# nix
-. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-
 # java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

@@ -8,3 +8,5 @@ set +o allexport
 # Extend Pythonpath with project ( useless if using vscode + settings.json )
 #PYTHONPATH=~/PycharmProjects/proj2/:$PYTHONPATH
 export PYTHONPATH
+
+export PATH="$HOME/.local/bin:$PATH"
