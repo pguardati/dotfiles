@@ -36,11 +36,11 @@
   },
   {
     "key": "cmd+u",
-    "command": "git.fetch",
+    "command": "git.fetch"
   },
   {
     "key": "ctrl+p",
-    "command": "git.push",
+    "command": "git.push"
   },
   {
     "key": "ctrl+shift+p",
@@ -97,6 +97,22 @@
     "key": "ctrl+alt+=",
     "command": "editor.unfoldRecursively",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  // fold explorer directories
+  {
+    "key": "ctrl+shift+-",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "list.collapse",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "list.expand",
+    "when": "explorerViewletVisible && filesExplorerFocus"
   },
   // execute
   {
