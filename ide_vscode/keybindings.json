@@ -25,6 +25,10 @@
     "command": "workbench.action.reloadWindow",
     "when": "editorTextFocus"
   },
+  {
+    "key": "shift+enter",
+    "command": "explorer.openAndPassFocus"
+  },
   // git
   {
     "key": "alt+g",
