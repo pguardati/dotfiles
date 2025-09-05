@@ -35,6 +35,11 @@
     "command": "editor.action.revealDefinitionAside",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
+  {
+    "key": "shift+ctrl+p",
+    "command": "workbench.action.navigateBack",
+    "when": "!activeEditorIsOpen"
+  },
   // git
   {
     "key": "alt+g",
@@ -51,10 +56,6 @@
   {
     "key": "ctrl+p",
     "command": "git.push"
-  },
-  {
-    "key": "ctrl+shift+p",
-    "command": "git.pushForce"
   },
   {
     "key": "cmd+z",
