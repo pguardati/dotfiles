@@ -26,8 +26,9 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+enter",
-    "command": "explorer.openAndPassFocus"
+    "key": "cmd+enter",
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletVisible && explorerViewletFocus"
   },
   // git
   {
