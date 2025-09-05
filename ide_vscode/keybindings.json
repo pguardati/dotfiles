@@ -30,6 +30,11 @@
     "command": "explorer.openAndPassFocus",
     "when": "explorerViewletVisible && explorerViewletFocus"
   },
+  {
+    "key": "g d",
+    "command": "editor.action.revealDefinitionAside",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
   // git
   {
     "key": "alt+g",
