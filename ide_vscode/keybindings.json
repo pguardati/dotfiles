@@ -45,6 +45,24 @@
     "command": "workbench.action.navigateBack",
     "when": "!activeEditorIsOpen"
   },
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "alt+s",
+    "command": "workbench.view.extension.containersView"
+  },
+  {
+    "key": "cmd+d",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
   // git
   {
     "key": "alt+g",
@@ -82,6 +100,11 @@
   {
     "key": "ctrl+alt+l",
     "command": "editor.action.formatDocument"
+  },
+  {
+    "key": "alt+r",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
   },
   // folding
   {
@@ -132,11 +155,17 @@
   },
   // execute
   {
-    "key": "cmd+e",
-    "command": "editor.debug.action.selectionToRepl"
-  },
-  {
     "key": "shift+f10",
     "command": "python.execInTerminal"
   },
+  {
+    "key": "cmd+e",
+    "command": "editor.debug.action.selectionToRepl",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+e",
+    "command": "jupyter.execSelectionInteractive",
+    "when": "editorTextFocus"
+  }
 ]
