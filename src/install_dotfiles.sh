@@ -4,6 +4,7 @@
 DEFAULT_SOURCE_PATH="$HOME/PycharmProjects/dotfiles/src"
 DEFAULT_DESTINATION_PATH="$HOME"
 CURSOR_KEYBINDINGS_DIR="$HOME/Library/Application Support/Cursor/User"
+VSCODE_KEYBINDINGS_DIR="$HOME/Library/Application Support/Code/User"
 
 prompt_user() {
   read -p "Do you want to use the default paths?
@@ -34,6 +35,9 @@ create_links() {
   # Link VSCode keybindings to Cursor keybindings
   ln -nfs "$DEFAULT_SOURCE_PATH/../ide_vscode/keybindings.json" "$CURSOR_KEYBINDINGS_DIR/keybindings.json"
   echo "VSCode keybindings linked to Cursor at $CURSOR_KEYBINDINGS_DIR/keybindings.json"
+
+  ln -nfs "$DEFAULT_SOURCE_PATH/../ide_vscode/keybindings.json" "$VSCODE_KEYBINDINGS_DIR/keybindings.json"
+  echo "VSCode keybindings linked to VSCode at $VSCODE_KEYBINDINGS_DIR/keybindings.json"
 }
 
 main() {

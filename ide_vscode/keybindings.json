@@ -63,6 +63,10 @@
     "command": "explorer.newFolder",
     "when": "explorerViewletVisible && filesExplorerFocus"
   },
+  {
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath"
+  },
   // git
   {
     "key": "alt+g",
@@ -166,6 +170,6 @@
   {
     "key": "cmd+e",
     "command": "jupyter.execSelectionInteractive",
-    "when": "editorTextFocus"
+    "when": "editorTextFocus && !inDebugMode"
   }
 ]
