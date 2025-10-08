@@ -1,5 +1,5 @@
 [
-  // focus 
+  // basic navigation 
   {
     "key": "alt+f",
     "command": "workbench.view.explorer"
@@ -13,18 +13,34 @@
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "cmd+f",
-    "command": "revealInExplorer"
+    "key": "cmd+shift+r",
+    "command": "workbench.action.reloadWindow",
+    "when": "editorTextFocus"
   },
   {
     "key": "cmd+o",
     "command": "revealFileInOS"
   },
+  // file and directories CRUD
   {
-    "key": "cmd+shift+r",
-    "command": "workbench.action.reloadWindow",
-    "when": "editorTextFocus"
+    "key": "cmd+f",
+    "command": "revealInExplorer"
   },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "shift+ctrl+d",
+    "command": "compareSelected"
+  },
+  // file edit
   {
     "key": "cmd+enter",
     "command": "explorer.openAndPassFocus",
@@ -50,18 +66,8 @@
     "command": "workbench.view.extensions"
   },
   {
-    "key": "cmd+n",
-    "command": "explorer.newFile",
-    "when": "explorerViewletVisible && filesExplorerFocus"
-  },
-  {
     "key": "alt+s",
     "command": "workbench.view.extension.containersView"
-  },
-  {
-    "key": "cmd+d",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletVisible && filesExplorerFocus"
   },
   {
     "key": "ctrl+shift+c",
@@ -74,10 +80,6 @@
   {
     "key": "ctrl+w",
     "command": "workbench.action.moveEditorToNewWindow"
-  },
-  {
-    "key": "shift+ctrl+d",
-    "command": "compareSelected"
   },
   {
     "key": "cmd+d",
