@@ -40,12 +40,15 @@
     "key": "shift+ctrl+d",
     "command": "compareSelected"
   },
-  // file edit
   {
-    "key": "cmd+enter",
-    "command": "explorer.openAndPassFocus",
-    "when": "explorerViewletVisible && explorerViewletFocus"
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath"
   },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.moveEditorToNewWindow"
+  },
+  // file edit
   {
     "key": "g g",
     "command": "cursorTop",
@@ -62,29 +65,22 @@
     "when": "!activeEditorIsOpen"
   },
   {
+    "key": "cmd+enter",
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletVisible && explorerViewletFocus"
+  },
+  {
+    "key": "shift+f6",
+    "command": "editor.action.rename"
+  },
+  // services
+  {
     "key": "cmd+shift+e",
     "command": "workbench.view.extensions"
   },
   {
     "key": "alt+s",
     "command": "workbench.view.extension.containersView"
-  },
-  {
-    "key": "ctrl+shift+c",
-    "command": "copyFilePath"
-  },
-  {
-    "key": "shift+f6",
-    "command": "editor.action.rename"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "workbench.action.moveEditorToNewWindow"
-  },
-  {
-    "key": "cmd+d",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletVisible && filesExplorerFocus"
   },
   // git
   {
@@ -144,7 +140,7 @@
     "command": "editor.action.startFindReplaceAction",
     "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
   },
-  // folding
+  // fold code
   {
     "key": "ctrl+shift+-",
     "command": "editor.foldAll",
@@ -197,14 +193,6 @@
     "command": "python.execInTerminal"
   },
   {
-    "key": "shift+f9",
-    "command": "testing.debugAtCursor"
-  },
-  {
-    "key": "f10",
-    "command": "testing.runAtCursor"
-  },
-  {
     "key": "cmd+e",
     "command": "editor.debug.action.selectionToRepl",
     "when": "inDebugMode"
@@ -213,5 +201,14 @@
     "key": "cmd+e",
     "command": "jupyter.execSelectionInteractive",
     "when": "editorTextFocus && !inDebugMode"
+  },
+  // tests
+  {
+    "key": "shift+f9",
+    "command": "testing.debugAtCursor"
+  },
+  {
+    "key": "f10",
+    "command": "testing.runAtCursor"
   }
 ]
