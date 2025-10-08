@@ -21,6 +21,14 @@
     "key": "cmd+o",
     "command": "revealFileInOS"
   },
+  {
+    "key": "cmd+shift+l",
+    "command": "chatgpt.openSidebar"
+  },
+  {
+    "key": "cmd+t",
+    "command": "openInIntegratedTerminal"
+  },
   // file and directories CRUD
   {
     "key": "cmd+f",
@@ -47,6 +55,11 @@
   {
     "key": "ctrl+w",
     "command": "workbench.action.moveEditorToNewWindow"
+  },
+  {
+    "key": "cmd+i",
+    "command": "git.ignore",
+    "when": "explorerViewletVisible && filesExplorerFocus"
   },
   // file edit
   {
@@ -90,6 +103,15 @@
   {
     "key": "ctrl+k",
     "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "cursor.generateGitCommitMessage",
+    "when": "scmProvider"
   },
   {
     "key": "cmd+u",
@@ -202,9 +224,24 @@
     "command": "jupyter.execSelectionInteractive",
     "when": "editorTextFocus && !inDebugMode"
   },
-  // tests
+  {
+    "key": "f9",
+    "command": "workbench.action.debug.stepOver",
+    "when": "inDebugMode"
+  },
   {
     "key": "shift+f9",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+e",
+    "command": "mysql.runSQL",
+    "when": "editorTextFocus && editorLangId == 'sql' && !inDebugMode"
+  },
+  // tests
+  {
+    "key": "shift+alt+f9",
     "command": "testing.debugAtCursor"
   },
   {

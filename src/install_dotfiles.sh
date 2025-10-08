@@ -30,6 +30,7 @@ create_links() {
   ln -nfs $SOURCE_PATH/.profile $DESTINATION_PATH/.profile
   ln -nfs $SOURCE_PATH/.bashrc $DESTINATION_PATH/.bashrc
   ln -nfs $SOURCE_PATH/.zshrc $DESTINATION_PATH/.zshrc
+  ln -nfs $SOURCE_PATH/.tmux.conf $DESTINATION_PATH/.tmux.conf
   echo "Dotfiles linked from $SOURCE_PATH to $DESTINATION_PATH"
 
   # Link VSCode keybindings to Cursor keybindings
