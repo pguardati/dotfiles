@@ -15,3 +15,4 @@ export PYTHONPATH
 
 export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
+export OLLAMA_ORIGINS=*
