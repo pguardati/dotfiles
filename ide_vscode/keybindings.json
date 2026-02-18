@@ -224,9 +224,24 @@
     "command": "jupyter.execSelectionInteractive",
     "when": "editorTextFocus && !inDebugMode"
   },
-  // tests
+  {
+    "key": "f9",
+    "command": "workbench.action.debug.stepOver",
+    "when": "inDebugMode"
+  },
   {
     "key": "shift+f9",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+e",
+    "command": "mysql.runSQL",
+    "when": "editorTextFocus && editorLangId == 'sql' && !inDebugMode"
+  },
+  // tests
+  {
+    "key": "shift+alt+f9",
     "command": "testing.debugAtCursor"
   },
   {
