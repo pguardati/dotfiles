@@ -113,5 +113,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
-# Added by Antigravity
+# AI IDE binaries
 export PATH="/Users/pietroguardati/.antigravity/antigravity/bin:$PATH"
+export PATH=/Users/pietroguardati/.opencode/bin:$PATH
+export PATH="/Users/pietroguardati/.codeium/windsurf/bin:$PATH"
+
+# ai-workflow aliases
+alias ts="tmux kill-session"
+exp() {
+  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit
+}
