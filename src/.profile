@@ -7,7 +7,7 @@ set -o allexport
 #source ~/PycharmProjects/web-server-v1/.env
 #source ~/PycharmProjects/_experiments/image-processor-or-agent/.env
 #source ~/PycharmProjects/_experiments/random-build/.env
-source ~/PycharmProjects/_experiments/random-build-2/.env
+#source ~/PycharmProjects/_experiments/random-build-2/.env
 #source ~/PycharmProjects/_experiments/random-build-3/.env
 #source ~/PycharmProjects/_experiments/random-build-4/.env
 set +o allexport
