@@ -123,3 +123,6 @@ alias ts="tmux kill-session"
 exp() {
   cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit
 }
+exp_codex() {
+  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=codex
+}
