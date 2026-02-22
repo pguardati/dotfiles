@@ -120,12 +120,18 @@ export PATH="/Users/pietroguardati/.codeium/windsurf/bin:$PATH"
 
 # ai-workflow aliases
 alias ts="tmux kill-session"
-exp() {
-  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=code
+_exp_project_dir() {
+  local suffix="${1:-_experiment2}"
+  echo "/Users/pietroguardati/PycharmProjects/${suffix}"
+}
+
+exp_claude() {
+  cd "$(_exp_project_dir "$1")" && multisplit --provider=code
 }
 exp_codex() {
-  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=codex
+  local suffix="${1:-_experiment2}"
+  cd "$(_exp_project_dir "$suffix")" && multisplit --provider=codex --session-name "codex-${suffix}"
 }
 exp_cursor() {
-  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=cursor
+  cd "$(_exp_project_dir "$1")" && multisplit --provider=cursor
 }

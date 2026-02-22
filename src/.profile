@@ -10,6 +10,7 @@ set -o allexport
 #source ~/PycharmProjects/_experiments/random-build-2/.env
 #source ~/PycharmProjects/_experiments/random-build-3/.env
 #source ~/PycharmProjects/_experiments/random-build-4/.env
+source ~/PycharmProjects/experiment-tado/tado-auth/.env
 set +o allexport
 
 # Extend Pythonpath with project ( useless if using vscode + settings.json )
