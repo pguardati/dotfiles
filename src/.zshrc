@@ -121,7 +121,7 @@ export PATH="/Users/pietroguardati/.codeium/windsurf/bin:$PATH"
 # ai-workflow aliases
 alias ts="tmux kill-session"
 exp() {
-  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit
+  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=code
 }
 exp_codex() {
   cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=codex
