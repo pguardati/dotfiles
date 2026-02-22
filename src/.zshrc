@@ -126,3 +126,6 @@ exp() {
 exp_codex() {
   cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=codex
 }
+exp_cursor() {
+  cd /Users/pietroguardati/PycharmProjects/_experiment2 && multisplit --provider=cursor
+}
