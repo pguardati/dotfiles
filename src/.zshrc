@@ -125,13 +125,15 @@ _exp_project_dir() {
   echo "/Users/pietroguardati/PycharmProjects/${suffix}"
 }
 
-exp_claude() {
-  cd "$(_exp_project_dir "$1")" && multisplit --provider=code
+open_claude() {
+  local suffix="${1:-_experiment2}"
+  cd "$(_exp_project_dir "$suffix")" && multisplit --provider=code
 }
-exp_codex() {
+open_codex() {
   local suffix="${1:-_experiment2}"
   cd "$(_exp_project_dir "$suffix")" && multisplit --provider=codex --session-name "codex-${suffix}"
 }
-exp_cursor() {
-  cd "$(_exp_project_dir "$1")" && multisplit --provider=cursor
+open_cursor() {
+  local suffix="${1:-_experiment2}"
+  cd "$(_exp_project_dir "$suffix")" && multisplit --provider=cursor
 }
