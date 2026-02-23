@@ -127,7 +127,7 @@ _exp_project_dir() {
 
 open_claude() {
   local suffix="${1:-_experiment2}"
-  cd "$(_exp_project_dir "$suffix")" && multisplit --provider=code
+  cd "$(_exp_project_dir "$suffix")" && multisplit --provider=claude
 }
 open_codex() {
   local suffix="${1:-_experiment2}"
