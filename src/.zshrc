@@ -122,7 +122,7 @@ export PATH="/Users/pietroguardati/.codeium/windsurf/bin:$PATH"
 alias ts="tmux kill-session"
 _exp_project_dir() {
   local suffix="${1:-_experiment2}"
-  echo "/Users/pietroguardati/PycharmProjects/${suffix}"
+  echo "/Users/pietroguardati/${suffix}"
 }
 
 open_claude() {
